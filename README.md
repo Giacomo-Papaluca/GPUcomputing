@@ -1,5 +1,5 @@
 # GPU computing
-Course material of the GPU computing master course held @ di.unimi.it.  
+Course material of GPU computing - master course held @ di.unimi.it.  
 
 Course site: http://gpu.di.unimi.it/
 
