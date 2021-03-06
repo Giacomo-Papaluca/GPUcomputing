@@ -6,4 +6,4 @@ _Google Colab_ è una piattaforma che permette di eseguire codice direttamente s
 - Collegare l'applicazione __Colaboratory__ dal _Google Workspace Marketplace_ (`Nuovo/altra applicazione/Colaboratory`)
 - Aprire un nuovo notebook Colab da Drive (`Nuovo/altro/Google Colaboratory`) da browser _Chrome_, _Firefox_, _Safari_ 
 - Dal menu `Runtime` scegliere `Cambia tipo di runtime` e dal pulsante _connetti_ scegliere _connetti a runtime ospitato_  e definire GPU nella scelta di accelerazione HW
-- editare ed eseguire il codice nelle celle del notebook
+- Seguire le istruzioni in [CUDA_base.ipynb](https://github.com/giulianogrossi/GPUcomputing/blob/master/lab1/CUDA_base.ipynb) per programmare con CUDA C
