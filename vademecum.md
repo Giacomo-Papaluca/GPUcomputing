@@ -1,29 +1,7 @@
-# Accesso via SSh
-Per usare i server `pascal.di.unimi.it` o `volta.di.unimi.it` del laboratorio _phuselab_ 
-occorre un account con proprio `username` (in genere il cognome, definito a inizio tesi). 
-L'autenticazione avviene tramite chiave SSH, una credenziale di accesso basata su crittografia sicura supportata dal protocollo SSH. 
-
-Quindi:
-
-- generare la coppia chiave pubblica-privata dal proprio pc personale utilizzando `ssh-keygen`
-- inviare a grossi@di.unimi.it la chiave pubblica come file allegato per avere la propria chiave autorizzata sul server
-- accedere a pascal: `ssh username@pascal.di.unimi.it`, oppure a volta: `ssh username@volta.di.unimi.it`
-- la propria home avrà global path: `/home/studenti/<cognome>`
-- cambiare subito la password temporanea definita per generare l'utente
-
-
-### Installazione di Conda e Python su Jupyter Notebook
-Per definire un ambiente di lavoro privato basato su python, installare mini-conda dalla propria login:
-- seguire le istruzioni in https://docs.conda.io/en/latest/miniconda.html
-
-Pe utilizzare in remoto (via browser) Python su Jupyter Notebook occorre procedere con l'installazione:
-- seguire le istruzioni in https://jupyter.org/install
-
-
 # Uso di Google Colab e Jupyter notebook
 _Google Colab_ è una piattaforma che permette di eseguire codice direttamente sul cloud (macchina virtuale temporanea) 
- o in locale su server privato, come `pascal.di.unimi.it` o `volta.di.unimi.it`. Occorre avere un account Google con 
- accesso a Google Drive dove salvare i propri notebook. Di seguito i passi per programmare in Python sul server tramite i notebook gestiti in Colab.
+ o in locale su server privato. Occorre avere un account Google con accesso a Google Drive dove salvare i propri notebook. 
+ Di seguito i passi per programmare in Python (o CUDA C) sul server tramite i notebook gestiti in Colab.
  
 - Collegare l'applicazione __Colaboratory__ dal _Google Workspace Marketplace_ (`Nuovo/altra applicazione/Colaboratory`)
 - Aprire un nuovo notebook Colab da Drive (`Nuovo/altro/Google Colaboratory`) da browser _Chrome_, _Firefox_, _Safari_ 
