@@ -1,5 +1,5 @@
 # GPU computing
-Materiale del corso di GPU computing - laurea AMgistrale in Informatica @ di.unimi.it.  
+Materiale di laboratorio del corso di GPU computing - laurea Magistrale in Informatica @ [di.unimi.it](www.di.unimi.it)
 
 Pagina del corso: [gpu.di.unimi.it](http://gpu.di.unimi.it/)
 
