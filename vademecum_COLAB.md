@@ -1,7 +1,7 @@
 # Uso di Google Colab e Jupyter notebook
 _Google Colab_ è una piattaforma che permette di eseguire codice direttamente sul cloud (macchina virtuale temporanea dotata di acceleratore GPU) 
  o in locale su server privato. Occorre avere un account Google con accesso a Google Drive dove salvare i propri notebook. 
- Di seguito i passi per programmare in Python (o CUDA C) sul server tramite i notebook gestiti in Colab, sfruttando la GPU dispoonibile.
+ Di seguito i passi per programmare in Python (o CUDA C) sul server tramite i notebook gestiti in Colab, sfruttando la GPU disponibile.
  
 - Collegare l'applicazione __Colaboratory__ dal _Google Workspace Marketplace_ (`Nuovo/altra applicazione/Colaboratory`)
 - Aprire un nuovo notebook Colab dal proprio Drive (`Nuovo/altro/Google Colaboratory`) mediante browser _Chrome_, _Firefox_ o _Safari_ 
