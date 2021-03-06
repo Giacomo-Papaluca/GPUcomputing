@@ -1,6 +1,6 @@
 # GPU computing
-Course material of GPU computing - master course held @ di.unimi.it.  
+Materiale del corso di GPU computing - laurea AMgistrale in Informatica @ di.unimi.it.  
 
-Course site: http://gpu.di.unimi.it/
+Pagina del corso: [gpu.di.unimi.it](http://gpu.di.unimi.it/)
 
-Master programme: https://www.unimi.it/en/education/computer-science-master
+Pagina del Corso di Laurea: [Laurea Magistrale in Informatica](https://www.unimi.it/en/education/computer-science-master)
