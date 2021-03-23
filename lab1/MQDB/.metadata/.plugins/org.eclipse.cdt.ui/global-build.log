@@ -1,0 +1,281 @@
+
+**** Build of configuration Debug for project lab1-exec ****
+
+Nothing to build for project lab1-exec
+
+**** Build of configuration Debug for project lab1-exec ****
+
+Nothing to build for project lab1-exec
+15:18:47 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:9:16: warning: unused variable ‘C1’ [-Wunused-variable]
+    9 |  mqdb A, B, C, C1;      // mqdb host matrices
+      |                ^~
+../main.cpp:17:8: warning: unused variable ‘kBytes’ [-Wunused-variable]
+   17 |  ulong kBytes = k * sizeof(uint);
+      |        ^~~~~~
+Finished building: ../main.cpp
+ 
+Building file: ../mqdb.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mqdb.d" -MT"mqdb.d" -o "mqdb.o" "../mqdb.cpp"
+In file included from ../mqdb.cpp:5:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../mqdb.cpp: In function ‘int genRandDims(mqdb*, uint, uint)’:
+../mqdb.cpp:21:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   21 |  for (int i = 0; i < k - 1; i++) {
+      |                  ~~^~~~~~~
+../mqdb.cpp:23:36: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   23 |   while ((r = round(mu * randu())) > n - sum - k + i + 1);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+../mqdb.cpp: In function ‘void fillBlocks(mqdb*, uint, uint, char, float)’:
+../mqdb.cpp:42:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   42 |  for (int i = 0; i < k; i++) {
+      |                  ~~^~~
+../mqdb.cpp: In function ‘void matProd(mqdb, mqdb, mqdb)’:
+../mqdb.cpp:107:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  107 |  for (uint i = 0; i < A.nBlocks; i++)
+      |                   ~~^~~~~~~~~~~
+../mqdb.cpp:110:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  110 |  for (uint r = 0; r < n; r++)
+      |                   ~~^~~
+../mqdb.cpp:111:22: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  111 |   for (uint c = 0; c < n; c++) {
+      |                    ~~^~~
+../mqdb.cpp:113:23: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  113 |    for (uint l = 0; l < n; l++){
+      |                     ~~^~~
+Finished building: ../mqdb.cpp
+ 
+Building target: lab1-exec
+Invoking: Cross G++ Linker
+g++  -o "lab1-exec"  ./main.o ./mqdb.o   
+Finished building target: lab1-exec
+ 
+15:19:05 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:57 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:9:16: warning: unused variable ‘C1’ [-Wunused-variable]
+    9 |  mqdb A, B, C, C1;      // mqdb host matrices
+      |                ^~
+../main.cpp:17:8: warning: unused variable ‘kBytes’ [-Wunused-variable]
+   17 |  ulong kBytes = k * sizeof(uint);
+      |        ^~~~~~
+Finished building: ../main.cpp
+ 
+Building file: ../mqdb.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mqdb.d" -MT"mqdb.d" -o "mqdb.o" "../mqdb.cpp"
+In file included from ../mqdb.cpp:5:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../mqdb.cpp: In function ‘int genRandDims(mqdb*, uint, uint)’:
+../mqdb.cpp:21:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   21 |  for (int i = 0; i < k - 1; i++) {
+      |                  ~~^~~~~~~
+../mqdb.cpp:23:36: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   23 |   while ((r = round(mu * randu())) > n - sum - k + i + 1);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+../mqdb.cpp: In function ‘void fillBlocks(mqdb*, uint, uint, char, float)’:
+../mqdb.cpp:42:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   42 |  for (int i = 0; i < k; i++) {
+      |                  ~~^~~
+../mqdb.cpp: In function ‘void mqdbProd(mqdb, mqdb, mqdb)’:
+../mqdb.cpp:100:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  100 |  for (uint i = 0; i < A.nBlocks; i++)
+      |                   ~~^~~~~~~~~~~
+../mqdb.cpp:104:17: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  104 |  for(uint r=0; r<blk_dim_0; r++){
+      |                ~^~~~~~~~~~
+../mqdb.cpp:105:18: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  105 |   for(uint c=0; c<blk_dim_0; c++){
+      |                 ~^~~~~~~~~~
+../mqdb.cpp:108:19: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  108 |    for(uint l=0; l<blk_dim_0; l++){
+      |                  ~^~~~~~~~~~
+../mqdb.cpp:117:30: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  117 |  for (uint blk_idx=1; blk_idx<A.nBlocks; blk_idx++){
+      |                       ~~~~~~~^~~~~~~~~~
+../mqdb.cpp:121:18: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  121 |   for(uint r=0; r<blk_dim; r++){
+      |                 ~^~~~~~~~
+../mqdb.cpp:122:19: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  122 |    for(uint c=0; c<blk_dim; c++){
+      |                  ~^~~~~~~~
+../mqdb.cpp:125:20: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  125 |     for(uint l=0; l<blk_dim; l++){
+      |                   ~^~~~~~~~
+../mqdb.cpp: In function ‘void matProd(mqdb, mqdb, mqdb)’:
+../mqdb.cpp:142:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  142 |  for (uint i = 0; i < A.nBlocks; i++)
+      |                   ~~^~~~~~~~~~~
+../mqdb.cpp:145:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  145 |  for (uint r = 0; r < n; r++)
+      |                   ~~^~~
+../mqdb.cpp:146:22: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  146 |   for (uint c = 0; c < n; c++) {
+      |                    ~~^~~
+../mqdb.cpp:148:23: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  148 |    for (uint l = 0; l < n; l++){
+      |                     ~~^~~
+Finished building: ../mqdb.cpp
+ 
+Building target: lab1-exec
+Invoking: Cross G++ Linker
+g++  -o "lab1-exec"  ./main.o ./mqdb.o   
+Finished building target: lab1-exec
+ 
+16:25:44 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../mqdb.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mqdb.d" -MT"mqdb.d" -o "mqdb.o" "../mqdb.cpp"
+In file included from ../mqdb.cpp:5:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../mqdb.cpp: In function ‘int genRandDims(mqdb*, uint, uint)’:
+../mqdb.cpp:21:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   21 |  for (int i = 0; i < k - 1; i++) {
+      |                  ~~^~~~~~~
+../mqdb.cpp:23:36: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   23 |   while ((r = round(mu * randu())) > n - sum - k + i + 1);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+../mqdb.cpp: In function ‘void fillBlocks(mqdb*, uint, uint, char, float)’:
+../mqdb.cpp:42:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint’ {aka ‘unsigned int’} [-Wsign-compare]
+   42 |  for (int i = 0; i < k; i++) {
+      |                  ~~^~~
+../mqdb.cpp: In function ‘void matProd(mqdb, mqdb, mqdb)’:
+../mqdb.cpp:142:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  142 |  for (uint i = 0; i < A.nBlocks; i++)
+      |                   ~~^~~~~~~~~~~
+../mqdb.cpp:145:21: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  145 |  for (uint r = 0; r < n; r++)
+      |                   ~~^~~
+../mqdb.cpp:146:22: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  146 |   for (uint c = 0; c < n; c++) {
+      |                    ~~^~~
+../mqdb.cpp:148:23: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  148 |    for (uint l = 0; l < n; l++){
+      |                     ~~^~~
+Finished building: ../mqdb.cpp
+ 
+Building target: lab1-exec
+Invoking: Cross G++ Linker
+g++  -o "lab1-exec"  ./main.o ./mqdb.o   
+Finished building target: lab1-exec
+ 
+16:25:56 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:52 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:15:2: error: ‘C2’ was not declared in this scope; did you mean ‘C1’?
+   15 |  C2 = mqdbConst(n, k, 10, 1);
+      |  ^~
+      |  C1
+../main.cpp:28:9: error: redeclaration of ‘double start’
+   28 |  double start = seconds();
+      |         ^~~~~
+../main.cpp:22:9: note: ‘double start’ previously declared here
+   22 |  double start = seconds();
+      |         ^~~~~
+../main.cpp:30:9: error: redeclaration of ‘double CPUTime’
+   30 |  double CPUTime = seconds() - start;
+      |         ^~~~~~~
+../main.cpp:24:9: note: ‘double CPUTime’ previously declared here
+   24 |  double CPUTime = seconds() - start;
+      |         ^~~~~~~
+../main.cpp:9:13: warning: unused variable ‘C’ [-Wunused-variable]
+    9 |  mqdb A, B, C, C1;      // mqdb host matrices
+      |             ^
+../main.cpp:18:8: warning: unused variable ‘kBytes’ [-Wunused-variable]
+   18 |  ulong kBytes = k * sizeof(uint);
+      |        ^~~~~~
+make: *** [subdir.mk:23: main.o] Error 1
+16:29:25 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: warning: unused variable ‘kBytes’ [-Wunused-variable]
+   18 |  ulong kBytes = k * sizeof(uint);
+      |        ^~~~~~
+Finished building: ../main.cpp
+ 
+Building target: lab1-exec
+Invoking: Cross G++ Linker
+g++  -o "lab1-exec"  ./main.o ./mqdb.o   
+Finished building target: lab1-exec
+ 
+16:29:33 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+make: Nothing to be done for 'all'.
+18:13:41 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../mqdb.h: In function ‘double seconds()’:
+../mqdb.h:36:9: warning: unused variable ‘i’ [-Wunused-variable]
+   36 |     int i = gettimeofday(&tp, &tzp);
+      |         ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: warning: unused variable ‘kBytes’ [-Wunused-variable]
+   18 |  ulong kBytes = k * sizeof(uint);
+      |        ^~~~~~
+Finished building: ../main.cpp
+ 
+Building target: lab1-exec
+Invoking: Cross G++ Linker
+g++  -o "lab1-exec"  ./main.o ./mqdb.o   
+Finished building target: lab1-exec
+ 
+18:13:44 **** Incremental Build of configuration Debug for project lab1-exec ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:41 **** Build of configuration Debug for project lab1-exec ****
+make all 
+make: Nothing to be done for 'all'.
