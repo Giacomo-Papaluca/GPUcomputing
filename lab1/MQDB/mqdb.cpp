@@ -96,6 +96,41 @@ mqdb mqdbConst(uint n, uint k, uint seed, float c) {
 void mqdbProd(mqdb A, mqdb B, mqdb C) {
 
 	// TODO
+	int n = 0;
+	for (int i = 0; i < A.nBlocks; i++)
+		n += A.blkSize[i];
+
+	int blk_dim_0=A.blkSize[0];
+	for(int r=0; r<blk_dim_0; r++){
+		for(int c=0; c<blk_dim_0; c++){
+			double sum=0;
+
+			for(int l=0; l<blk_dim_0; l++){
+				double a=A.elem[r*n+l];
+				double b=B.elem[c+n*l];
+				sum+=a*b;
+			}
+			C.elem[r*n+c]=(float)sum;
+		}
+	}
+
+	for (int blk_idx=1; blk_idx<A.nBlocks; blk_idx++){
+		int blk_dim=A.blkSize[blk_idx];
+		int blk_dim_prev=A.blkSize[blk_idx-1];
+		int block_offset=n*blk_dim_prev+blk_dim_prev;
+		for(int r=0; r<blk_dim; r++){
+			for(int c=0; c<blk_dim; c++){
+				double sum=0;
+
+				for(int l=0; l<blk_dim; l++){
+					double a=A.elem[block_offset+r*n+l];
+					double b=B.elem[block_offset+c+n*l];
+					sum+=a*b;
+				}
+				C.elem[block_offset+r*n+c]=sum;
+			}
+		}
+	}
 
 }
 
